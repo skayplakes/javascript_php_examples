@@ -1,0 +1,181 @@
+.blackcontainer {
+	width: 700px;
+	min-height: 100px;
+	border: 1px solid black;
+	background-color: black;
+	padding: 10px;
+	overflow: hidden;
+}
+
+.greybox {
+	width: 150px;
+	height: 150px;
+	background-color: grey;
+	margin: 10px;
+	float: left;
+}
+
+.whitecontainer {
+	border: 1px solid white;
+	width: 150px;
+	height: 150px;
+	padding: 10px 10px 50px 10px;
+	margin: 10px;
+	float: left;
+	position: relative;
+}
+
+.greybox2 {
+	width: 150px;
+	height: 150px;
+	background-color: grey;
+	margin: 10px;
+	float: left;
+	position: absolute;
+	right: 0px;
+}
+
+.whitecontainer span {
+	color: white;
+	text-align: center;
+	position: relative;
+	top: 150px;
+	left: 40px;
+
+}
+
+.greybox3 {
+	min-width: 20%;
+	height: 150px;
+	background-color: grey;
+	box-sizing: border-box;
+	float: left;
+	margin: 5px 10px auto 5px;
+}
+
+header {
+	color: white;
+	font-weight: bold;
+	text-align: center;
+	font-size: 30px;
+}
+
+p {
+	color: white;
+	/*min-width: 77%;*/
+}
+
+.textleft2 {
+	float: right;
+	min-width: 77%;
+	margin-top: 0;
+}
+
+/*.italic {
+	font-style: italic;
+}*/
+
+.greybox4 {
+	min-width: 7%;
+	height: 50px;
+	background-color: grey;
+	float: left;
+
+}
+
+textarea {
+	min-width: 92%;
+	float: right;
+	height: 100px;
+}
+
+form {
+	float: right;
+}
+
+.clear:after {
+	content: "";
+	display: block;
+	clear: both;
+}
+
+.juan {
+	color: white;
+}
+
+.whiteline {
+	min-width: 91%;
+	float: right;
+}
+
+nav {
+	min-width: 7%;
+	float: left;
+}
+
+.blackcontainer2 {
+	width: 500px;
+	min-height: 100px;
+	background-color: black;
+	padding: 10px;
+}
+
+.greybox5 {
+	width: 100%;
+	height: 100px;
+	background-color: grey;
+	float: left;
+}
+
+.greytext > span {
+	color: gray;
+	float: right;
+	width: 59%;
+	display: block;
+}
+
+strong {
+	color: white;
+}
+
+.leftgreybox {
+	width: 40%;
+}
+
+.greybox6 {
+	width: 100%;
+	height: 100px;
+	background-color: grey;
+	float: right;
+}
+
+.textleft > span {
+	width: 59%;
+	color: grey;
+	float: left;
+}
+
+.rightgreybox {
+	width: 40%;
+}
+
+.greybox7 {
+	width: 150px;
+	height: 150px;
+	background-color: grey;
+	margin: 0px 5px 5px 0px;
+}
+
+.greyboxright {
+	float: right;
+	min-width: 69%;
+}
+
+h1 {
+	color: white;
+}
+
+.textleft3 {
+	float: left;
+	min-width: 30%;
+}
