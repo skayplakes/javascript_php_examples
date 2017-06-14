@@ -142,7 +142,7 @@
 
 					document.getElementById('start').onclick = function (){
 					document.getElementById('hide_5').style.display = "block";
-					document.getElementById('hide_2').style.display = "none";
+					document.getElementById('hide_2').style.display = "none ";
 					document.getElementById('hide_3').style.display = "none";
 					document.getElementById('hide_4').style.display = "none";
 
