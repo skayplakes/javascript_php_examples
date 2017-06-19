@@ -1,6 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+
+<body>
+	<form id="register" action="" method="POST">
+		<fieldset style="width: 30%;">
+			<legend><h1>Registration form</h1></legend>
+
+				<table border="0">
+					<tr>
+						<td>Username:</td>
+						<td><input type="text" name="username"></td>
+					</tr>
+					<tr>
+						<td>Password:</td>
+						<td><input type="password" name="password"></td>
+					</tr>
+						
+				</table>	
+
+				<input type="submit" name="submit">
+				<button type="submit" name="back">Go Back</button>
+				
+		</fieldset>
+	</form>	
+
 <?php
 
-$string = file_get_contents('new.json');
+	$string = file_get_contents('new.json');
 	$users = json_decode($string, true);
 
 	if(isset($_POST['submit'])) {
@@ -16,48 +45,22 @@ $string = file_get_contents('new.json');
 		fclose($fp);
 	}
 
-		if(isset($_POST['login'])){
-			foreach ($users as $user) {
-				if($_POST['username'] == $user['username'] && $_POST['password'] == $user['password']){
-					header('location:store_layout.php'); //redirect to main content
-				} else {
-					header('location:register.php');
-				}
+	if(isset($_POST['login'])){
+		foreach ($users as $user) {
+			if($_POST['username'] == $user['username'] && $_POST['password'] == $user['password']){
+				header('location:content.php');
+				 //redirect to main content
+			} else {
+				header('location:register.php');
 			}
-	}
+		}
+	} //modal login
+
+	if(isset($_POST['back'])){
+		header('location:content.php');
+	} //register back button
 
 ?>
-
-<!DOCTYPE html>
-<html>
-<head>
-	<title></title>
-</head>
-<body>
-
-
-
-<form id="register" action="" method="POST">
-	<fieldset style="width: 30%;">
-		<legend><h1>Registration form</h1></legend>
-
-			<table border="0">
-				<tr>
-						<td>Username:</td>
-						<td><input type="text" name="username"></td>
-				</tr>
-				<tr>
-						<td>Password:</td>
-						<td><input type="password" name="password"></td>
-				</tr>
-					
-			</table>	
-
-			<input type="submit" name="submit">
-			
-	</fieldset>
-</form>	
-
 
 </body>
 </html>

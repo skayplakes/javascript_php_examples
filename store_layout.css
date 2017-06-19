@@ -74,7 +74,8 @@ img.avatar {
 
 .container {
 	padding: 16px;
-} /*adjustment for ALL container*/
+} 
+/*adjustment for ALL container*/
 
 span.psw {
 	float: right;
@@ -138,6 +139,7 @@ from {transform: scale(0)}
 to {transform: scale(1)}
 }
 
+
 .modal-form {
 	width: 100%;
 }
@@ -148,6 +150,7 @@ to {transform: scale(1)}
 	display: block;
 	float: none;
 }
+
 .cancelbtn {
 width: 100%;
  }
